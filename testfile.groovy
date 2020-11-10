@@ -5,7 +5,7 @@ node {
 
      sh '''
      
-     git ls -remote -h  https://github.com/testgithub1006/hello-world.git  | awk '{print $2}' | awk -F 'refs/heads/' {print $2}' > branches
+     git ls-remote -h  https://github.com/testgithub1006/hello-world.git  | awk '{print $2}' | awk -F 'refs/heads/' {print $2}' > branches
 
        '''
        
